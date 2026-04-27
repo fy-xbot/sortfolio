@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SortFolio — Support / 技术支持</title>
+  <meta name="description" content="SortFolio (归册) technical support, FAQ and contact information. 归册 App 技术支持、常见问题与联系方式。" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #555;
+      --accent: #007AFF;
+      --border: #e0e0e0;
+      --section-bg: #f9f9f9;
+      --hero-bg: #f4f6fb;
+      --code-bg: #eef1f6;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #f0f0f0;
+        --muted: #aaa;
+        --accent: #0A84FF;
+        --border: #333;
+        --section-bg: #1e1e1e;
+        --hero-bg: #1a1d24;
+        --code-bg: #262a32;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    .lang-switcher {
+      display: flex; gap: 12px; justify-content: flex-end; margin-bottom: 32px;
+    }
+    .lang-btn {
+      background: none; border: 1px solid var(--border);
+      color: var(--muted); padding: 4px 12px; border-radius: 20px;
+      cursor: pointer; font-size: 13px;
+      font-family: inherit;
+    }
+    .lang-btn.active {
+      background: var(--accent); border-color: var(--accent); color: #fff;
+    }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+    .updated { font-size: 13px; color: var(--muted); margin-bottom: 32px; }
+    h2 { font-size: 17px; font-weight: 600; margin: 32px 0 10px; }
+    p, li { font-size: 15px; color: var(--muted); }
+    ul, ol { padding-left: 20px; }
+    li { margin-bottom: 6px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    section {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      background: var(--section-bg);
+    }
+    section h2 { margin-top: 0; }
+    .hero {
+      background: var(--hero-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 24px;
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .hero h1 { font-size: 32px; margin-bottom: 8px; }
+    .hero p { font-size: 15px; }
+    .hidden { display: none; }
+    .contact-block {
+      display: flex; flex-direction: column; gap: 8px;
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 12px;
+      border: 1px solid var(--border);
+    }
+    .contact-block strong { color: var(--text); font-weight: 600; }
+    code, .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: var(--code-bg);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 13px;
+      color: var(--text);
+    }
+    details {
+      border-bottom: 1px solid var(--border);
+      padding: 14px 0;
+    }
+    details:last-child { border-bottom: none; }
+    details summary {
+      cursor: pointer;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+      list-style: none;
+      position: relative;
+      padding-right: 24px;
+    }
+    details summary::-webkit-details-marker { display: none; }
+    details summary::after {
+      content: "+";
+      position: absolute;
+      right: 0; top: 50%;
+      transform: translateY(-50%);
+      font-size: 20px;
+      color: var(--muted);
+      transition: transform 0.2s;
+    }
+    details[open] summary::after { content: "−"; }
+    details > p, details > ul, details > ol {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    footer {
+      margin-top: 60px;
+      font-size: 13px;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.8;
+    }
+    footer a { margin: 0 6px; }
+  </style>
+</head>
+<body>
+
+<div class="lang-switcher">
+  <button class="lang-btn active" onclick="setLang('zh')">中文</button>
+  <button class="lang-btn" onclick="setLang('en')">English</button>
+</div>
+
+<!-- ─── Chinese ─── -->
+<div id="zh">
+  <div class="hero">
+    <h1>归册 · 技术支持</h1>
+    <p>感谢使用归册（SortFolio）。这里汇总了常见问题与联系方式。</p>
+  </div>
+  <p class="updated">最后更新：2026 年 4 月</p>
+
+  <section>
+    <h2>联系我们</h2>
+    <p>遇到问题或有功能建议，欢迎通过邮件联系。请尽量附上：</p>
+    <ul>
+      <li>设备型号与系统版本（如 iPhone 15 Pro · iOS 18.4）</li>
+      <li>归册 App 版本号（在「设置 → 关于」可查看）</li>
+      <li>问题描述或截图</li>
+    </ul>
+    <div class="contact-block">
+      <span><strong>邮箱：</strong><a href="mailto:1447956670@qq.com">1447956670@qq.com</a></span>
+      <span><strong>响应时间：</strong>通常 1–3 个工作日内回复</span>
+      <span><strong>支持语言：</strong>简体中文 / English</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>系统要求</h2>
+    <ul>
+      <li><strong>iOS：</strong>iOS 15.5 或更高版本</li>
+      <li><strong>设备：</strong>iPhone（iPad 暂以兼容模式运行）</li>
+      <li><strong>权限：</strong>需要照片库访问权限以浏览和整理照片</li>
+      <li><strong>网络：</strong>核心功能离线可用，仅 Pro 激活、版本检测、配置同步会联网</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>常见问题（FAQ）</h2>
+
+    <details open>
+      <summary>归册会上传我的照片到云端吗？</summary>
+      <p>不会。所有照片浏览、相似检测、压缩处理都在你的设备本地完成，不会上传任何照片或视频到我们的服务器。详见 <a href="privacy-policy.html">隐私政策</a>。</p>
+    </details>
+
+    <details>
+      <summary>我滑动「删除」的照片去哪了？还能恢复吗？</summary>
+      <p>归册不会立即永久删除照片。被删除的照片会移入 iOS 系统相册的「最近删除」相簿，保留 30 天。在此期间你可以从「最近删除」中恢复，超过 30 天后由 iOS 自动清空。</p>
+    </details>
+
+    <details>
+      <summary>每日免费整理张数用完了怎么办？</summary>
+      <p>免费用户每天可以整理 50 张照片。配额会在每日 0 点自动重置。如果想取消每日配额，可以在「设置 → 升级 Pro」中订阅或购买 Pro。</p>
+    </details>
+
+    <details>
+      <summary>兑换码（Redeem Code）如何使用？</summary>
+      <ol>
+        <li>打开归册 → 进入「设置」页</li>
+        <li>点击「升级 Pro」打开付费墙</li>
+        <li>选择「使用兑换码」入口</li>
+        <li>输入完整兑换码后点击确认</li>
+      </ol>
+      <p>激活成功后 Pro 状态会立即生效。如提示「无效」请检查是否多输入了空格、字母大小写是否正确，或邮件联系我们核实。</p>
+    </details>
+
+    <details>
+      <summary>我换了新 iPhone，Pro 状态会丢失吗？</summary>
+      <p>不会丢失。如果你是通过 App Store 内购订阅或买断的：在新设备上登录同一 Apple ID → 打开归册 → 进入付费墙 → 点击「恢复购买」即可。如果你使用的是兑换码：请联系邮箱 <a href="mailto:1447956670@qq.com">1447956670@qq.com</a>，提供兑换码或购买凭证后我们会为你迁移授权。</p>
+    </details>
+
+    <details>
+      <summary>如何取消订阅？</summary>
+      <p>归册的订阅由 Apple 管理。请前往：<br/>iPhone「设置」→ 顶部你的姓名 → 「订阅」→ 选择 SortFolio → 「取消订阅」。<br/>取消后当期仍可继续使用 Pro 功能直到到期。</p>
+    </details>
+
+    <details>
+      <summary>「最近删除」里清空了，归册的应用数据会受影响吗？</summary>
+      <p>不会。归册只读取 iOS 系统相册的状态，自身不存储照片副本。你在系统相册侧的任何操作（清空、恢复）都会被归册自动同步识别。</p>
+    </details>
+
+    <details>
+      <summary>跨设备数据会同步吗？</summary>
+      <p>目前归册的「已归档记录」「美学评分缓存」等数据存储在本设备本地，不跨设备同步。系统相册本身的同步由 iCloud 照片提供（如你已开启）。</p>
+    </details>
+
+    <details>
+      <summary>相似照片 / 模糊 / 截图识别准确吗？</summary>
+      <p>识别基于设备端的本地算法：相似检测使用感知哈希 + 时间窗口；美学评分使用本地化的 NIMA 模型。算法会持续优化，但仍可能存在误判，建议在删除前确认。</p>
+    </details>
+
+    <details>
+      <summary>压缩功能会损失画质吗？</summary>
+      <p>会。归册的图片与视频压缩属于<strong>有损压缩</strong>，目的是显著降低占用空间，过程不可逆。压缩前请确认重要素材已备份至 iCloud 或其他位置。我们在压缩页面也会做相应提示。</p>
+    </details>
+
+    <details>
+      <summary>App 闪退或卡住怎么办？</summary>
+      <ol>
+        <li>尝试上滑关闭归册再重新打开</li>
+        <li>重启 iPhone</li>
+        <li>检查 App Store 是否有归册的新版本</li>
+        <li>仍无法解决，请通过邮件附上设备型号、iOS 版本、归册版本号联系我们</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>如何评价或反馈？</summary>
+      <p>欢迎在 App Store 留下评分与评论 — 这对独立开发者非常重要。如果有具体的功能建议或 Bug 报告，邮件是更可靠的渠道。</p>
+    </details>
+
+    <details>
+      <summary>可以删除我的相关数据吗？</summary>
+      <p>归册不会收集你的个人信息。仅 Pro 激活会用到匿名设备标识符。如需删除服务器上与你相关的兑换码/激活记录，请邮件联系，我们会在 30 天内处理。详见 <a href="privacy-policy.html">隐私政策</a>。</p>
+    </details>
+  </section>
+
+  <section>
+    <h2>退款政策</h2>
+    <p>所有 App Store 内购退款均由 Apple 处理。请前往 <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a> 提交退款申请，登录你的 Apple ID 后选择对应的购买记录。</p>
+    <p>由于兑换码激活的 Pro 不通过 App Store 计费，原则上不支持退款，但我们仍欢迎你邮件沟通具体情况。</p>
+  </section>
+</div>
+
+<!-- ─── English ─── -->
+<div id="en" class="hidden">
+  <div class="hero">
+    <h1>SortFolio · Support</h1>
+    <p>Thanks for using SortFolio. This page collects FAQs and contact info.</p>
+  </div>
+  <p class="updated">Last updated: April 2026</p>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>For questions or feature requests, please email us. To help us respond faster, include:</p>
+    <ul>
+      <li>Device model and OS version (e.g. iPhone 15 Pro · iOS 18.4)</li>
+      <li>SortFolio version (Settings → About)</li>
+      <li>A description or screenshot of the issue</li>
+    </ul>
+    <div class="contact-block">
+      <span><strong>Email:</strong> <a href="mailto:1447956670@qq.com">1447956670@qq.com</a></span>
+      <span><strong>Response time:</strong> Typically within 1–3 business days</span>
+      <span><strong>Languages:</strong> English / 简体中文</span>
+    </div>
+  </section>
+
+  <section>
+    <h2>System Requirements</h2>
+    <ul>
+      <li><strong>iOS:</strong> iOS 15.5 or later</li>
+      <li><strong>Device:</strong> iPhone (iPad runs in compatibility mode)</li>
+      <li><strong>Permission:</strong> Photo Library access is required to browse and organize photos</li>
+      <li><strong>Network:</strong> Core features work offline; network is used only for Pro activation, version checks and config sync</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+
+    <details open>
+      <summary>Does SortFolio upload my photos to the cloud?</summary>
+      <p>No. All browsing, similarity detection and compression happen on your device. Nothing is uploaded to our servers. See the <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    </details>
+
+    <details>
+      <summary>Where do photos go when I swipe "Delete"? Can I recover them?</summary>
+      <p>SortFolio does not permanently delete photos immediately. They are moved to iOS's "Recently Deleted" album, where iOS keeps them for 30 days. You can recover them from there during this period; after 30 days iOS automatically purges them.</p>
+    </details>
+
+    <details>
+      <summary>I ran out of free daily organize quota. What now?</summary>
+      <p>Free users can organize up to 50 photos per day. The quota resets daily at midnight. To remove the quota, subscribe to or purchase Pro from Settings → Upgrade Pro.</p>
+    </details>
+
+    <details>
+      <summary>How do I use a redeem code?</summary>
+      <ol>
+        <li>Open SortFolio → go to Settings</li>
+        <li>Tap "Upgrade Pro" to open the paywall</li>
+        <li>Select the "Use redeem code" option</li>
+        <li>Enter the full code and confirm</li>
+      </ol>
+      <p>Pro is activated immediately on success. If you see "Invalid code", check for stray spaces or letter case, or email us to verify.</p>
+    </details>
+
+    <details>
+      <summary>I switched to a new iPhone. Will I lose Pro?</summary>
+      <p>No. If you purchased via App Store: sign in with the same Apple ID on the new device → open SortFolio → open the paywall → tap "Restore Purchases". If you used a redeem code: email <a href="mailto:1447956670@qq.com">1447956670@qq.com</a> with your code or purchase receipt and we'll migrate the entitlement.</p>
+    </details>
+
+    <details>
+      <summary>How do I cancel my subscription?</summary>
+      <p>Subscriptions are managed by Apple. Go to:<br/>iPhone Settings → your name at the top → Subscriptions → SortFolio → Cancel Subscription.<br/>You'll keep Pro access until the current period ends.</p>
+    </details>
+
+    <details>
+      <summary>If I empty "Recently Deleted", will SortFolio's data be affected?</summary>
+      <p>No. SortFolio only reads from the iOS Photos library and does not keep its own copies. Any change you make on the system side (empty / restore) is automatically reflected.</p>
+    </details>
+
+    <details>
+      <summary>Does data sync across my devices?</summary>
+      <p>Currently, SortFolio's "organized records" and "aesthetic score cache" are stored locally on each device and do not sync across devices. The Photos library itself syncs via iCloud Photos if you have it enabled.</p>
+    </details>
+
+    <details>
+      <summary>How accurate is the similar / blurry / screenshot detection?</summary>
+      <p>Detection runs entirely on-device: similarity uses perceptual hashing plus a time window; aesthetic scoring uses a local NIMA model. We keep improving accuracy, but mistakes can still happen — please review before deleting.</p>
+    </details>
+
+    <details>
+      <summary>Does compression reduce quality?</summary>
+      <p>Yes. SortFolio's photo and video compression is <strong>lossy</strong> by design — the goal is significant size reduction, and the process is not reversible. Please make sure originals are backed up to iCloud or elsewhere before compressing. The app shows reminders on the compression screen.</p>
+    </details>
+
+    <details>
+      <summary>The app crashes or freezes. What can I do?</summary>
+      <ol>
+        <li>Swipe the app away to close it, then relaunch</li>
+        <li>Restart your iPhone</li>
+        <li>Check the App Store for an update</li>
+        <li>If the issue persists, email us with your device model, iOS version and SortFolio version</li>
+      </ol>
+    </details>
+
+    <details>
+      <summary>How do I leave a review or feedback?</summary>
+      <p>App Store reviews are very helpful for an independent developer. For specific feature requests or bug reports, email is the most reliable channel.</p>
+    </details>
+
+    <details>
+      <summary>Can I delete my data?</summary>
+      <p>SortFolio does not collect personal information. Pro activation only uses an anonymous device identifier. To request deletion of any redeem code / activation records on our server, email us — we'll process within 30 days. See the <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    </details>
+  </section>
+
+  <section>
+    <h2>Refund Policy</h2>
+    <p>All App Store in-app purchase refunds are handled by Apple. Visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>, sign in with your Apple ID and select the relevant purchase to request a refund.</p>
+    <p>Pro activated via redeem codes is not billed by the App Store and is generally non-refundable, but you are welcome to email us to discuss your specific case.</p>
+  </section>
+</div>
+
+<footer>
+  <p>SortFolio &nbsp;·&nbsp; <a href="index.html">Home</a> · <a href="marketing.html">About / 应用介绍</a> · <a href="privacy-policy.html">Privacy / 隐私政策</a> · <a href="user-agreement.html">Agreement / 用户协议</a></p>
+  <p>© 2026 郭亚鹏</p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('zh').classList.toggle('hidden', lang !== 'zh');
+    document.getElementById('en').classList.toggle('hidden', lang !== 'en');
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector('.lang-btn[onclick="setLang(\'' + lang + '\')"]').classList.add('active');
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : 'en';
+  }
+  // Auto-detect browser language
+  if (navigator.language && !navigator.language.startsWith('zh')) setLang('en');
+</script>
+</body>
+</html>
