@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SortFolio — User Agreement / 用户协议</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #1a1a1a;
+      --muted: #555;
+      --accent: #007AFF;
+      --border: #e0e0e0;
+      --section-bg: #f9f9f9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #121212;
+        --text: #f0f0f0;
+        --muted: #aaa;
+        --accent: #0A84FF;
+        --border: #333;
+        --section-bg: #1e1e1e;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+      line-height: 1.7;
+    }
+    .lang-switcher {
+      display: flex; gap: 12px; justify-content: flex-end; margin-bottom: 32px;
+    }
+    .lang-btn {
+      background: none; border: 1px solid var(--border);
+      color: var(--muted); padding: 4px 12px; border-radius: 20px;
+      cursor: pointer; font-size: 13px;
+    }
+    .lang-btn.active {
+      background: var(--accent); border-color: var(--accent); color: #fff;
+    }
+    h1 { font-size: 28px; font-weight: 700; margin-bottom: 6px; }
+    .updated { font-size: 13px; color: var(--muted); margin-bottom: 40px; }
+    h2 { font-size: 17px; font-weight: 600; margin: 32px 0 10px; }
+    p, li { font-size: 15px; color: var(--muted); }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 4px; }
+    a { color: var(--accent); }
+    section {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      background: var(--section-bg);
+    }
+    section h2 { margin-top: 0; }
+    .hidden { display: none; }
+    footer { margin-top: 60px; font-size: 13px; color: var(--muted); text-align: center; }
+  </style>
+</head>
+<body>
+
+<div class="lang-switcher">
+  <button class="lang-btn active" onclick="setLang('zh')">中文</button>
+  <button class="lang-btn" onclick="setLang('en')">English</button>
+</div>
+
+<!-- ─── Chinese ─── -->
+<div id="zh">
+  <h1>用户协议</h1>
+  <p class="updated">最后更新：2026 年 4 月</p>
+
+  <section>
+    <h2>接受条款</h2>
+    <p>欢迎使用归册（SortFolio）。本用户协议是您与本应用开发者（以下简称"我们"）之间的法律协议，适用于您对本应用的使用。</p>
+    <p>下载、安装或使用本应用即表示您已阅读、理解并同意受本协议约束。如果您不同意本协议的任何条款，请立即停止使用本应用并卸载。</p>
+  </section>
+
+  <section>
+    <h2>使用资格</h2>
+    <p>使用本应用，您须满足以下条件：</p>
+    <ul>
+      <li>年满 13 周岁（在欧盟须年满 16 周岁）</li>
+      <li>具备签订具有法律约束力合同的能力</li>
+      <li>未依据适用法律被禁止使用本应用</li>
+    </ul>
+    <p>若您代表未成年人使用本应用，您作为监护人对其使用行为承担相应责任。</p>
+  </section>
+
+  <section>
+    <h2>服务说明</h2>
+    <p>归册（SortFolio）是一款相册整理工具，旨在帮助用户高效管理设备中的照片和视频。应用提供卡片式整理、相似照片检测、存储分析等功能。所有照片和视频的处理均在设备本地完成。应用仅通过网络进行 Pro 功能验证和版本更新检测。</p>
+    <p>本应用不对您的照片、视频进行云端存储或备份，相关数据管理责任由您本人承担。</p>
+  </section>
+
+  <section>
+    <h2>许可与限制</h2>
+    <p>我们授予您非独占、不可转让、可撤销的个人使用许可。</p>
+    <p>您不得：</p>
+    <ul>
+      <li>对本应用进行反编译、逆向工程、破解或修改</li>
+      <li>绕过或破坏本应用的任何技术保护措施</li>
+      <li>将本应用用于任何商业目的，包括出租、销售或转售</li>
+      <li>通过自动化工具批量操作本应用</li>
+      <li>违反任何适用的法律法规使用本应用</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pro 功能与订阅</h2>
+    <p>归册提供免费基础功能和 Pro 高级功能：</p>
+    <ul>
+      <li>免费用户每日可使用一定次数的整理操作</li>
+      <li>Pro 用户解锁无限制整理操作及全部工具功能</li>
+      <li>iOS 用户通过 Apple App Store 内购获取 Pro 功能</li>
+    </ul>
+    <p>关于订阅的重要说明：</p>
+    <ul>
+      <li>订阅将通过您的 Apple ID 账户扣费，到期前 24 小时自动续订</li>
+      <li>可在 设置 &gt; Apple ID &gt; 订阅 中随时取消，取消后当期仍可使用</li>
+      <li>我们保留在合理通知后调整 Pro 功能范围的权利</li>
+    </ul>
+    <p>在应用商店购买的内容，亦适用 Apple App Store 的退款政策。</p>
+  </section>
+
+  <section>
+    <h2>用户责任</h2>
+    <p>使用本应用时，您应当：</p>
+    <ul>
+      <li>确保拥有所整理照片和视频的合法权利或授权</li>
+      <li>在执行删除操作前确认已对重要文件进行备份</li>
+      <li>合法合规地使用本应用，不用于任何违法或侵权目的</li>
+    </ul>
+    <p>删除操作将直接影响设备上的文件。本应用提供将文件移入"最近删除"的保护机制，但请务必谨慎操作。</p>
+    <p>因您违反本协议或不当使用本应用造成的任何损失，由您本人承担。</p>
+  </section>
+
+  <section>
+    <h2>知识产权</h2>
+    <p>本应用的界面设计、源代码、图标、品牌标识等所有知识产权归开发者所有，受中国及国际知识产权法律保护。</p>
+    <p>您通过本应用整理的照片和视频的版权归您本人或相应权利人所有，本应用不主张对用户内容的任何权利。</p>
+  </section>
+
+  <section>
+    <h2>免责声明</h2>
+    <p>本应用按"现状"提供服务，在适用法律允许的最大范围内，我们不提供任何明示或暗示的保证。</p>
+    <p>我们不对以下情况承担责任：</p>
+    <ul>
+      <li>因用户误操作导致的文件丢失或损坏</li>
+      <li>因设备故障、系统崩溃导致的数据损坏</li>
+      <li>因操作系统更新导致的兼容性问题</li>
+      <li>因不可抗力导致的服务中断</li>
+    </ul>
+    <p>强烈建议您定期备份重要数据。</p>
+  </section>
+
+  <section>
+    <h2>责任限制</h2>
+    <p>在适用法律允许的最大范围内，我们对您承担的总赔偿责任不超过您在过去 12 个月内为使用本应用实际支付的金额（如有）。</p>
+    <p>在任何情况下，我们均不对间接损失、附带损失、惩罚性损害、利润损失或数据丢失承担责任。部分地区的法律不允许排除或限制附带损害赔偿责任，上述限制可能对您不适用。</p>
+  </section>
+
+  <section>
+    <h2>协议终止</h2>
+    <p>您可以随时卸载本应用来终止本协议。如果您违反本协议的任何条款，我们有权暂停或终止您对 Pro 功能的访问权限。</p>
+    <p>协议终止后，本协议中关于知识产权、免责声明、责任限制和争议解决的条款仍然有效。</p>
+  </section>
+
+  <section>
+    <h2>适用法律</h2>
+    <p>本协议受中华人民共和国法律管辖。与本协议相关的任何争议，双方应首先通过友好协商解决。若您位于欧盟、英国、澳大利亚等地区，当地消费者保护法律中对您更为有利的条款仍对您适用。</p>
+  </section>
+
+  <section>
+    <h2>协议变更</h2>
+    <p>我们可能会不定期更新本协议。对于重大变更，我们将在生效前至少 7 天通过应用内通知告知您。在通知期届满后继续使用本应用，视为您接受更新后的协议。</p>
+  </section>
+
+  <section>
+    <h2>联系我们</h2>
+    <p>如对本协议有任何疑问，请联系：<br/><a href="mailto:1447956670@qq.com">1447956670@qq.com</a></p>
+    <p>我们将在收到联系后 30 天内回复。</p>
+  </section>
+</div>
+
+<!-- ─── English ─── -->
+<div id="en" class="hidden">
+  <h1>User Agreement</h1>
+  <p class="updated">Last updated: April 2026</p>
+
+  <section>
+    <h2>Acceptance of Terms</h2>
+    <p>Welcome to SortFolio. This User Agreement (the "Agreement") is a legal agreement between you and the developer ("we", "us", or "our"), and governs your use of the App.</p>
+    <p>By downloading, installing, or using the App, you confirm that you have read, understood, and agree to be bound by this Agreement. If you do not agree, please stop using and uninstall the App immediately.</p>
+  </section>
+
+  <section>
+    <h2>Eligibility</h2>
+    <p>To use this App, you must be at least 13 years of age (or 16 in the EU), have legal capacity to enter into a binding agreement, and not be prohibited from using the App under applicable law.</p>
+  </section>
+
+  <section>
+    <h2>Service Description</h2>
+    <p>SortFolio is a photo album organization tool providing card-based sorting, similar photo detection, and storage analysis. All processing is performed locally on your device. Network access is used only for Pro feature verification and update checks.</p>
+    <p>The App does not perform cloud storage or backup of your media. You are solely responsible for managing and backing up your own files.</p>
+  </section>
+
+  <section>
+    <h2>License &amp; Restrictions</h2>
+    <p>We grant you a non-exclusive, non-transferable, revocable license for personal non-commercial use. You may not: decompile or reverse-engineer the App; circumvent technical protection measures; use the App for commercial purposes; use automated tools; or violate applicable laws.</p>
+  </section>
+
+  <section>
+    <h2>Pro Features &amp; Subscriptions</h2>
+    <p>SortFolio offers free basic features and Pro premium features. iOS users unlock Pro features via Apple App Store in-app purchase.</p>
+    <p>Important subscription information:</p>
+    <ul>
+      <li>Subscriptions are charged to your Apple ID account and auto-renew 24 hours before expiry</li>
+      <li>You can cancel anytime in Settings &gt; Apple ID &gt; Subscriptions; access continues until end of current period</li>
+      <li>We reserve the right to adjust Pro feature scope with reasonable prior notice</li>
+    </ul>
+    <p>Apple App Store refund policy applies to purchases made through the store.</p>
+  </section>
+
+  <section>
+    <h2>User Responsibilities</h2>
+    <p>You must ensure you have legal rights over media you organize, back up important files before deleting, and use the App lawfully. Delete operations directly affect files on your device — the App moves items to "Recently Deleted" as a safeguard, but please proceed with caution.</p>
+  </section>
+
+  <section>
+    <h2>Intellectual Property</h2>
+    <p>All intellectual property rights in the App belong to the developer and are protected by applicable laws. Copyright of photos and videos you organize remains with you or the respective rights holder.</p>
+  </section>
+
+  <section>
+    <h2>Disclaimer</h2>
+    <p>The App is provided "as is." We make no warranties of merchantability or fitness for a particular purpose, nor that the service will be uninterrupted or error-free. We are not liable for file loss due to user error, device failure, OS updates, or force majeure. We strongly recommend regular backups.</p>
+  </section>
+
+  <section>
+    <h2>Limitation of Liability</h2>
+    <p>Our total liability shall not exceed the amount you paid for the App in the 12 months preceding any claim. We are not liable for indirect, incidental, punitive, or consequential damages. Some jurisdictions do not allow such limitations; they may not apply to you.</p>
+  </section>
+
+  <section>
+    <h2>Termination</h2>
+    <p>You may terminate by uninstalling the App. We may suspend Pro access for Agreement violations. Provisions on intellectual property, disclaimers, liability, and disputes survive termination.</p>
+  </section>
+
+  <section>
+    <h2>Governing Law</h2>
+    <p>This Agreement is governed by the laws of the People's Republic of China. Disputes shall first be resolved through negotiation. If you are in the EU, UK, or Australia, local consumer protection laws more favorable to you still apply.</p>
+  </section>
+
+  <section>
+    <h2>Agreement Changes</h2>
+    <p>We may update this Agreement periodically. Material changes will be communicated at least 7 days before taking effect via in-app notification. Continued use after the notice period constitutes acceptance.</p>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:1447956670@qq.com">1447956670@qq.com</a><br/>We will respond within 30 days.</p>
+  </section>
+</div>
+
+<footer>
+  <p>SortFolio &nbsp;·&nbsp; <a href="privacy-policy.html">Privacy Policy / 隐私政策</a></p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('zh').classList.toggle('hidden', lang !== 'zh');
+    document.getElementById('en').classList.toggle('hidden', lang !== 'en');
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.querySelector(`.lang-btn[onclick="setLang('${lang}')"]`).classList.add('active');
+    document.documentElement.lang = lang === 'zh' ? 'zh-Hans' : 'en';
+  }
+  if (navigator.language && !navigator.language.startsWith('zh')) setLang('en');
+</script>
+</body>
+</html>
